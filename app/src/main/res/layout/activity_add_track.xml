@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTrackActivity">
+
+    <EditText
+        android:id="@+id/id_edit_textTrackName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Track Name"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        />
+    <SeekBar
+        android:id="@+id/SeekBarRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:entries="@array/genres"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnAddTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Track"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewArtistTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="text View"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:id="@+id/listViewTracks"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/colorPrimaryDark"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
